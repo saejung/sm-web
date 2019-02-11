@@ -7,7 +7,7 @@
   "cache-control": false,
   "deploy-config-base": [],
   "type-handler": {"dateformat": "yyyyMMddHHmmss"},
-  "deploy-path": ["/clx"],
+  "deploy-path": ["/"],
   "fileupload": {
     "tempdirpath": "",
     "thresholdsize": 10240,
