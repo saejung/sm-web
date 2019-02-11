@@ -43,24 +43,16 @@
     <cl:appspec dev-comment="[테스트 화면 설명]&#xD;&#xA;데이트 인풋컨트롤의 value속성에 데이터맵(dm1)의 time컬럼과 바인딩이 되어 있습니다.&#xD;&#xA;&#xD;&#xA;&quot;time을 얻어옵니다&quot; 버튼을 클릭시 서브미션(sms1).send()을 수행 합니다.&#xD;&#xA;&#xD;&#xA;서브미션을 통해 서버와 통신을 하고 통신에 성공을 하면 submit-success 이벤트가 호출이 되고 &#xD;&#xA;서버에서 얻어온 데이터를 갱신 하기 위해 데이트 인풋을 다시 그려 데이터를 갱신 하는 화면 입니다.&#xD;&#xA;&#xD;&#xA;Model View의 서브미션(sms1)을 더블클릭하여 서브미션 편집 팝업을 확인 해보면 action에서 경로를 지정하여 서버와 통신을 합니다.&#xD;&#xA;요청데이터 : 화면에서 서버로 데이터를 전달 할 때 데이터셋/데이터맵을 추가 하여 사용 합니다.&#xD;&#xA;응답데이터 : 서버에서 화면으로 데이터를 전달 할 때 데이터셋/데이터맵을 추가 하여 사용 합니다."/>
   </head>
   <body std:sid="body-e07dfe41" style="top:0px; left:0px; width:800px; height:600px;">
-    <cl:listener std:sid="listener-6cbfe043" handler="onBodyLoad" name="load"/>
-    <cl:dateinput std:sid="d-input-e7cb7e17" id="dti1">
-      <cl:datamapbind property="value" columnname="TIME" datacontrolid="dm1"/>
-      <cl:xylayoutdata std:sid="xyl-data-cb03f19c" height="51px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="141px"/>
-    </cl:dateinput>
-    <cl:button std:sid="button-b7982af1" value="time을 얻어옵니다.">
-      <cl:listener std:sid="listener-5550518b" handler="onButtonClick" name="click"/>
-      <cl:xylayoutdata std:sid="xyl-data-e1cc50ce" height="51px" horizontalAnchor="LEFT" left="171px" top="20px" verticalAnchor="TOP" width="204px"/>
-    </cl:button>
+    <cl:listener std:sid="listener-9d93feb7" handler="onBodyLoad" name="load"/>
     <cl:navigationbar std:sid="n-bar-4c7c3fb9" id="menu1">
+      <cl:listener std:sid="listener-45a6936e" handler="onMenu1SelectionChange" name="selection-change"/>
       <cl:datamapbind category="PROPERTY" property="value" columnname="LABEL" datacontrolid="dm2"/>
-      <cl:xylayoutdata std:sid="xyl-data-a452dd65" height="40px" horizontalAnchor="LEFT" left="190px" top="120px" verticalAnchor="TOP" width="536px"/>
+      <cl:xylayoutdata std:sid="xyl-data-a452dd65" height="40px" horizontalAnchor="BOTH" left="269px" right="265px" top="141px" verticalAnchor="TOP"/>
       <cl:menuitemset datasetid="menu_ds" label="LABEL" value="VALUE" parent="PARENT"/>
     </cl:navigationbar>
-    <cl:button std:sid="button-36086bf0" value="menuList 를 얻어옵니다.">
-      <cl:listener std:sid="listener-91f9441a" handler="onButtonClick2" name="click"/>
-      <cl:xylayoutdata std:sid="xyl-data-f522365f" height="40px" horizontalAnchor="LEFT" left="736px" top="120px" verticalAnchor="TOP" width="204px"/>
-    </cl:button>
+    <cl:output std:sid="output-d37755d5" style="font-size:30px; text-align:center;" value="대구 청년사회 진입활동 지원 포털">
+      <cl:xylayoutdata std:sid="xyl-data-daec069f" height="46px" horizontalAnchor="BOTH" left="278px" right="254px" top="45px" verticalAnchor="TOP"/>
+    </cl:output>
     <cl:xylayout std:sid="xylayout-5568bc74"/>
   </body>
   <std:studiosetting>

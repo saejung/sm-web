@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-97d19700" version="1.0.0.0">
+  <head std:sid="head-d15879c8">
+    <title>login</title>
+    <screen std:sid="screen-f8966775" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-bcd1c804" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-87d725e2" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-23bfb535"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-da1846a3" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-f21e084d" value="login">
+      <cl:listener std:sid="listener-4f1e5a34" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-915dd130" height="20px" horizontalAnchor="LEFT" left="176px" top="102px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-88e5bcc4"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
