@@ -1,17 +1,19 @@
-package eXbuilder.test.service;
+package eXbuilder.let.menu.service;
 
-import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TestService {
+public class MenuService {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 		
-	public Map getTime() {
-		return sqlSession.selectOne("test.getTime");
+	public List<HashMap<String, String>> getMenuList() {
+		return  sqlSession.selectList("menu.getMenuList");
 	}
+
 }
